@@ -1,0 +1,14 @@
+xterm*background: black
+xterm*foreground: lightgray
+xterm*savelines: 2000
+xterm*facesize: 8
+xterm*scrollbar: true
+xterm*scrollttyoutput: true
+xterm*vt100.translations: #override \n\
+      Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\
+      Shift Ctrl<Key>V: insert-selection(PRIMARY) \n\
+      Shift<Btn1Down>: select-start() \n\
+      Shift<Btn1Motion>: select-extent() \n\
+      Shift<Btn1Up>: select-end(CLIPBOARD) \n\
+      Shift Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
+      Shift Ctrl <Key>V: insert-selection(SELECT)
