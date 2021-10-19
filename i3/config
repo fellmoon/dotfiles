@@ -104,15 +104,15 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:coms"
-set $ws2 "2:browser"
+set $ws2 "2:brows"
 set $ws3 "3:edit"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8:coms"
+set $ws7 "7:bhyve"
+set $ws8 "8:jails"
 set $ws9 "9:news"
-set $ws10 "10"
+set $ws10 "10:sys"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -177,5 +177,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
-exec --no-startup-id feh --bg-scale '/home/fellmoon/Pictures/wallpaper.jpg'
+exec --no-startup-id feh --bg-scale '/home/fellmoon/pics/wp1.jpg'
 exec "setxkbmap us -variant intl"
+exec "xrdb .Xresources"
