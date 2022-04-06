@@ -1,7 +1,8 @@
 xterm*background: black
 xterm*foreground: lightgray
 xterm*savelines: 2000
-xterm*facesize: 8
+xterm*faceName: Inconsolata
+xterm*faceSize: 12
 xterm*scrollbar: true
 xterm*scrollttyoutput: true
 xterm*vt100.translations: #override \n\
@@ -12,3 +13,5 @@ xterm*vt100.translations: #override \n\
       Shift<Btn1Up>: select-end(CLIPBOARD) \n\
       Shift Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
       Shift Ctrl <Key>V: insert-selection(SELECT)
+xterm*deleteIsDEL: false
+xterm*eightBitInput: false
